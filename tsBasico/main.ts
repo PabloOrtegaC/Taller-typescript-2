@@ -7,7 +7,7 @@ function insertSeries(series: Serie[]): void {
     series.forEach(s => {
         let tr: HTMLElement = document.createElement('tr');
         let html: string = `  <td class="table-active"> <b>${s.id}</b> </td>
-                              <td class="table-active"> <a href=${s.link} target="_blank">${s.name}</a> </td>
+                              <td class="table-active"> ${s.name}</a> </td>
                               <td class="table-active"> ${s.channel} </td>
                               <td class="table-active"> ${s.seasons} </td>`;
         tr.innerHTML = html;
